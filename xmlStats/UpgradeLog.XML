@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="xmlStats">
+</Property><Property Name="Solution File" Value="C:\Users\al\Documents\Visual Studio 2008\Projects\xmlStats\xmlStats.sln">
+</Property><Property Name="Date" Value="13. november 2008. a.">
+</Property><Property Name="Time" Value="0:14">
+</Property></Properties><Event ErrorLevel="0" Project="xmlStats" Source="xmlStats\xmlStats.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="xmlStats" Source="xmlStats\xmlStats.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="xmlStats.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="xmlStats.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="xmlStats" Source="xmlStats\xmlStats.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

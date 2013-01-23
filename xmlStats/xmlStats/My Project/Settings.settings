@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="namesAsText" Type="System.String" Scope="User">
+      <Value Profile="(Default)">;kvm;</Value>
+    </Setting>
+    <Setting Name="excludeNodes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">;@O;kom;kaut;kaeg;G;K;KA;KL;T;TA;TL;PT;PTA;X;XA;</Value>
+    </Setting>
+    <Setting Name="enumNames" Type="System.String" Scope="User">
+      <Value Profile="(Default)">;@Al;@liik;vk;kvm;sl;v;s;@l;rk;mvtl;tvtl;@nliik;@aliik;</Value>
+    </Setting>
+    <Setting Name="msNimi" Type="System.String" Scope="User">
+      <Value Profile="(Default)">m</Value>
+    </Setting>
+    <Setting Name="artNimi" Type="System.String" Scope="User">
+      <Value Profile="(Default)">A</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

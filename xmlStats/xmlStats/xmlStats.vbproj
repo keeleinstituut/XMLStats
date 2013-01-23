@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BCEC4443-8A9B-4D0F-9DE6-64CAF0A0C8B5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>xmlStats.My.MyApplication</StartupObject>
+    <RootNamespace>xmlStats</RootNamespace>
+    <AssemblyName>xmlStats</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>2A8DA06860677D43EA1B91E41605F49B59B4D860</ManifestCertificateThumbprint>
+    <ManifestKeyFile>xmlStats_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <ApplicationIcon>xml_32-16.ico</ApplicationIcon>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Dev\VS8Publish\xmlStats\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.2</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>xmlStats.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>xmlStats.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Office, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmDlgAddName.Designer.vb">
+      <DependentUpon>frmDlgAddName.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDlgAddName.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDlgDicVals.Designer.vb">
+      <DependentUpon>frmDlgDicVals.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDlgDicVals.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDlgElemsAsText.Designer.vb">
+      <DependentUpon>frmDlgElemsAsText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDlgElemsAsText.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDlgFindText.Designer.vb">
+      <DependentUpon>frmDlgFindText.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDlgFindText.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDlgHelp.Designer.vb">
+      <DependentUpon>frmDlgHelp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDlgHelp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDlgLoadFile.Designer.vb">
+      <DependentUpon>frmDlgLoadFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDlgLoadFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDlgPrefs.Designer.vb">
+      <DependentUpon>frmDlgPrefs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDlgPrefs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDlgSaveAs.Designer.vb">
+      <DependentUpon>frmDlgSaveAs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDlgSaveAs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDlgSplitXML.Designer.vb">
+      <DependentUpon>frmDlgSplitXML.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDlgSplitXML.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDlgValidationErrors.Designer.vb">
+      <DependentUpon>frmDlgValidationErrors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDlgValidationErrors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDlgXMLValidate.designer.vb">
+      <DependentUpon>frmDlgXMLValidate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDlgXMLValidate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.vb">
+      <DependentUpon>frmMain.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowParseError.Designer.vb">
+      <DependentUpon>frmShowParseError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowParseError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowParseErrors.Designer.vb">
+      <DependentUpon>frmShowParseErrors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowParseErrors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mod1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmDlgAddName.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDlgAddName.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDlgDicVals.resx">
+      <DependentUpon>frmDlgDicVals.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDlgElemsAsText.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDlgElemsAsText.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDlgFindText.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDlgFindText.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDlgHelp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDlgHelp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDlgLoadFile.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDlgLoadFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDlgPrefs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDlgPrefs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDlgSaveAs.resx">
+      <DependentUpon>frmDlgSaveAs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDlgSplitXML.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDlgSplitXML.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDlgValidationErrors.resx">
+      <DependentUpon>frmDlgValidationErrors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDlgXMLValidate.resx">
+      <DependentUpon>frmDlgXMLValidate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowParseError.resx">
+      <DependentUpon>frmShowParseError.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowParseErrors.resx">
+      <DependentUpon>frmShowParseErrors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="xmlStats_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="pildid\" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="Resources\openHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ico_msenv0019.ico" />
+    <Content Include="xml_16-16.ico" />
+    <Content Include="xml_32-16.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
